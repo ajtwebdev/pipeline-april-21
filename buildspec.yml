@@ -12,7 +12,7 @@ phases:
             - 'npm run build'    
     post_build:        
         commands:            
-            - 'aws s3 sync "public/" "s3://www.pipeline-april-21" --delete --acl "public-read"
+            - 'aws s3 sync "public/" "s3://www.pipeline-april-21.com" --delete --acl "public-read"
 'artifacts:    
     base-directory: public    
     files:        
